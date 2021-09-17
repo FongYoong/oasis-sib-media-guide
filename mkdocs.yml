@@ -1,0 +1,63 @@
+site_name: Oasis SIB Media Guide
+repo_url: https://github.com/FongYoong/oasis-sib-media-guide
+site_description: Documentation for Media Team
+site_author: Fong Chien Yoong
+nav:
+    - Home: index.md
+    - Setup:
+        - Hardware Setup: setup/hardware.md
+        - Software Setup: setup/software.md
+    - Livestream:
+        - Initial Setup: livestream/initial_setup.md
+        - Going Live: livestream/going_live.md
+        - Church Vision Video: livestream/church_vision_video.md
+        - Pre-Service Prayer: livestream/pre_service_prayer.md
+        - Worship: livestream/worship.md
+        - Announcements: livestream/announcements.md
+        - Live Sermon: livestream/live_sermon.md
+        - Recorded Sermon: livestream/recorded_sermon.md
+        - Outro: livestream/outro.md
+    - Macros:
+        - Overview: macros/overview.md
+        - Announcements: macros/Announcements.md
+        - GreenScreenFull: macros/GreenScreenFull.md
+
+theme:
+    name: material
+    palette:
+      primary: deep purple
+    favicon: favicon.ico
+    icon:
+        logo: octicons/device-desktop-16
+    features:
+      - navigation.tabs
+      - navigation.sections
+      - navigation.expand
+      
+    prev_next_buttons_location: bottom
+    titles_only: false
+
+plugins:
+  - search
+
+markdown_extensions:
+  -  toc:
+      permalink: true
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - pymdownx.tasklist:
+        custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/config.js
+
+extra_css:
